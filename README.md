@@ -32,6 +32,11 @@ $ gcloud sql instances create my-mysql \
 $ gcloud sql databases create employee --instance=my-mysql
 ```
 
+#### Connect MySQL Instance
+```shell script
+$ gcloud beta sql connect my-mysql
+```
+
 ## Features
 
 - feature:1
