@@ -82,6 +82,10 @@ INSERT INTO department VALUES ('30','SALES');
 INSERT INTO department VALUES ('40','OPERATIONS');
 ```
 
+#### Add User
+```shell script
+$ gcloud sql users create employee-user --instance=my-mysql --password=[PASSWORD]
+```
 ## Features
 
 - feature:1
