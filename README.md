@@ -76,6 +76,10 @@ INSERT INTO employee VALUES ('7900','JAMES','CLERK','30');
 INSERT INTO employee VALUES ('7902','FORD','ANALYST','20');
 INSERT INTO employee VALUES ('7934','MILLER','CLERK','10');
 
+INSERT INTO department VALUES ('10','ACCOUNTING');
+INSERT INTO department VALUES ('20','RESEARCH');
+INSERT INTO department VALUES ('30','SALES');
+INSERT INTO department VALUES ('40','OPERATIONS');
 ```
 
 ## Features
