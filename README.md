@@ -84,16 +84,21 @@ INSERT INTO department VALUES ('40','OPERATIONS');
 
 #### Add User
 ```shell script
-$ gcloud sql users create employee-user --instance=my-mysql --password=[PASSWORD]
+$ gcloud sql users create employee-user --instance=my-mysql --host=% --password=[PASSWORD]
 ```
 
 ```shell script
 $ gcloud sql users list --instance=my-mysql
 
 NAME           HOST
-employee-user
+employee-user  %
 root           %
 ```
+
+```shell script
+mysql> GRANT ALL ON employee.* TO 'employee-user'@'%'
+```
+
 ## Features
 
 - feature:1
