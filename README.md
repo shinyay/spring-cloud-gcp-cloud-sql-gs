@@ -11,6 +11,11 @@ The Cloud SQL Socket Factory is a library for the MySQL/Postgres JDBC drivers th
 
 
 ## Demo
+### Cloud SQL
+#### Enable API
+```shell script
+$ gcloud services enable sqladmin.googleapis.com
+```
 
 ## Features
 
