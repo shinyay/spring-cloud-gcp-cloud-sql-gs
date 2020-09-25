@@ -96,7 +96,7 @@ root           %
 ```
 
 ```shell script
-mysql> GRANT ALL ON employee.* TO 'employee-user'@'%'
+mysql> GRANT ALL ON employee.* TO 'employee-user'@'%';
 ```
 
 ## Features
