@@ -17,6 +17,15 @@ The Cloud SQL Socket Factory is a library for the MySQL/Postgres JDBC drivers th
 $ gcloud services enable sqladmin.googleapis.com
 ```
 
+```shell script
+$ gcloud sql instances create my-mysql \
+    --database-version=MYSQL_5_7 \
+    --region=us-central1 \
+    --cpu=2 \
+    --memory=4G \
+    --root-password=[ROOT_PASSWORD]
+```
+
 ## Features
 
 - feature:1
