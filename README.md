@@ -96,6 +96,8 @@ root           %
 ```
 
 ##### Grant User
+Grant added user to access the specific database. The following query shows user can access only employee database.
+
 ```shell script
 mysql> GRANT ALL ON employee.* TO 'employee-user'@'%';
 ```
