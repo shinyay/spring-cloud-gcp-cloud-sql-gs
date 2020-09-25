@@ -22,6 +22,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.springframework.cloud:spring-cloud-gcp-starter")
 	implementation("org.springframework.boot:spring-boot-starter-jdbc")
+	implementation("com.google.cloud.sql:mysql-socket-factory-connector-j-8")
 	runtimeOnly("mysql:mysql-connector-java")
 	testImplementation("org.springframework.boot:spring-boot-starter-test") {
 		exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
