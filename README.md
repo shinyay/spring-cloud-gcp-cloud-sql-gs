@@ -39,6 +39,23 @@ $ gcloud beta sql connect my-mysql
 
 `gclod beta sql` uses Cloud SQL Proxy.
 
+#### Create Table
+```shell script
+mysql> use employee
+```
+
+```mysql
+DROP TABLE IF EXISTS employee;
+
+CREATE TABLE employee (
+  employee_id decimal(4,0) NOT NULL,
+  employee_name varchar(10) DEFAULT NULL,
+  role varchar(9) DEFAULT NULL,
+  department_id decimal(2,0) DEFAULT NULL
+);
+
+```
+
 ## Features
 
 - feature:1
