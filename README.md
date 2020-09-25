@@ -37,6 +37,8 @@ $ gcloud sql databases create employee --instance=my-mysql
 $ gcloud beta sql connect my-mysql
 ```
 
+`gclod beta sql` uses Cloud SQL Proxy.
+
 ## Features
 
 - feature:1
