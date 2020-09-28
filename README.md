@@ -5,9 +5,15 @@ This tutorial shows **Spring Data Cloud SQL**.
 
 ## Description
 ### Spring Cloud GCP
+#### Spring Cloud SQL Dependency
+```kotlin
+dependencies {
+	implementation("org.springframework.cloud:spring-cloud-gcp-starter-sql-mysql")
+}
+```
+
 ### Cloud SQL Socket Factory for JDBC drivers
 The Cloud SQL Socket Factory is a library for the MySQL/Postgres JDBC drivers that allows a user with the appropriate permissions to connect to a Cloud SQL database without having to deal with IP whitelisting or SSL certificates manually.
-
 - [github](https://github.com/GoogleCloudPlatform/cloud-sql-jdbc-socket-factory)
 
 
