@@ -5,4 +5,5 @@ spring:
         instance-connection-name: ${CONNECTION_NAME}
         database-name: employee
   datasource:
-    username: ${USERNAME:employee-user}
+    username: ${USERNAME:root}
+    password: ${PASSWORD:admin}
