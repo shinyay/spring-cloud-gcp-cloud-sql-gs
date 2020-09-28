@@ -1,1 +1,6 @@
+spring:
+  cloud:
+    gcp:
+      sql:
+        instance-connection-name: ${CONNECTION_NAME}
 
