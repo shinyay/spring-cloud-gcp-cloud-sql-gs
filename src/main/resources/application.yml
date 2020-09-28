@@ -4,3 +4,5 @@ spring:
       sql:
         instance-connection-name: ${CONNECTION_NAME}
         database-name: employee
+  datasource:
+    username: ${USERNAME:employee-user}
