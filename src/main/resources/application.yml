@@ -3,4 +3,4 @@ spring:
     gcp:
       sql:
         instance-connection-name: ${CONNECTION_NAME}
-
+        database-name: employee
