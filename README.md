@@ -126,6 +126,11 @@ mysql> show grants for 'employee-user'@'%';
 2 rows in set (0.13 sec)
 ```
 
+#### Retrieve Instance Connection Name
+```shell script
+$ gcloud sql instances describe my-mysql --format='value(connectionName)'
+```
+
 ## Features
 
 - feature:1
