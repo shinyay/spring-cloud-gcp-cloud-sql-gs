@@ -5,12 +5,33 @@ This tutorial shows **Spring Data Cloud SQL**.
 
 ## Description
 ### Spring Cloud GCP
-#### Spring Cloud SQL Dependency
+#### Spring Cloud GCP - Cloud SQL Dependency
 ```kotlin
 dependencies {
 	implementation("org.springframework.cloud:spring-cloud-gcp-starter-sql-mysql")
 }
 ```
+
+#### Spring Cloud GCP - Cloud SQL Configuration
+```yaml
+spring:
+  cloud:
+    gcp:
+      sql:
+        instance-connection-name: ${CONNECTION_NAME:shinyay-works-200908-288904:us-central1:my-mysql}
+        database-name: employee
+        credentials:
+### either one of the followings
+#          encoded-key: <BASE64_ENCODED_SERVICE_ACCOUNT_KEY>
+#          location: classpath:credential/key.json
+#          location: file:/Users/shinyay/key.json
+  datasource:
+    username: ${USERNAME:root}
+    password: ${PASSWORD:admin}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+```
+
 
 ### Cloud SQL Socket Factory for JDBC drivers
 The Cloud SQL Socket Factory is a library for the MySQL/Postgres JDBC drivers that allows a user with the appropriate permissions to connect to a Cloud SQL database without having to deal with IP whitelisting or SSL certificates manually.
@@ -180,6 +201,14 @@ Create a private key for a service account.
 ```shell script
 $ gcloud iam service-accounts keys create key.json \
   --iam-account spring-cloud-gcp@(gcloud config get-value project).iam.gserviceaccount.com
+```
+
+#### Encode Service Account Key by Base64
+
+```shell script
+$ base64 key.json
+
+ewogICJ0eXBlIjo......bnQuY29tIgp9Cg==
 ```
 
 ## Features
