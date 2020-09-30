@@ -19,8 +19,8 @@ dependencies {
 |spring.cloud.gcp.sql.instance-connection-name|Cloud SQL Instance Connection Name<br>`project-id:region:instance-name`<br>You can get by `gcloud sql instances describe my-mysql --format='value(connectionName)'`|
 |spring.cloud.gcp.sql.database-name|Database Name|
 |spring.cloud.gcp.sql.credentials|Authenticate and authorize new connection by Google OAuth2 credential private key|
-|spring.cloud.gcp.sql.credentials.location|classpath:<UNDER_RESOURCES_DIR>/key.json <br>file:/<FILE_PATH>/shinyay/key.json|
-|spring.cloud.gcp.sql.credentials.encoded-key||
+|spring.cloud.gcp.sql.credentials.location|`classpath:<UNDER_RESOURCES_DIR>/key.json` <br>`file:/<FILE_PATH>/shinyay/key.json`|
+|spring.cloud.gcp.sql.credentials.encoded-key|Base64-encoded strings <br> `base64 key.json`|
 
 ```yaml
 spring:
