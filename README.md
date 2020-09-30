@@ -21,6 +21,7 @@ dependencies {
 |spring.cloud.gcp.sql.credentials|Authenticate and authorize new connection by Google OAuth2 credential private key|
 |spring.cloud.gcp.sql.credentials.location|`classpath:<UNDER_RESOURCES_DIR>/key.json` <br>`file:/<FILE_PATH>/shinyay/key.json`|
 |spring.cloud.gcp.sql.credentials.encoded-key|Base64-encoded strings <br> `base64 key.json`|
+|spring.datasource.username|User name for database access|
 
 ```yaml
 spring:
