@@ -163,10 +163,23 @@ List all of a project's service accounts.
 - `gcloud projects add-iam-policy-binding <PROJECT_ID> --member serviceAccount:<SERVICE_ACCOUNT> --role <ROLE>`
   - [reference](https://cloud.google.com/sdk/gcloud/reference/projects/add-iam-policy-binding)
 
+Add a policy binding to the IAM policy of a project, given a project ID and the binding. 
+
 ```shell script
 $ gcloud projects add-iam-policy-binding (gcloud config get-value project) \
     --member serviceAccount:spring-cloud-gcp@(gcloud config get-value project).iam.gserviceaccount.com \
     --role roles/editor
+```
+
+#### Create Service Account Key
+- `gcloud iam service-accounts keys create <OUTPUT_FILE> --iam-account <SERVICE_ACCOUNT>`
+  - [reference](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/keys/create)
+
+Create a private key for a service account.
+
+```shell script
+$ gcloud iam service-accounts keys create key.json \
+  --iam-account spring-cloud-gcp@(gcloud config get-value project).iam.gserviceaccount.com
 ```
 
 ## Features
