@@ -155,7 +155,9 @@ gcloud iam service-accounts create spring-cloud-gcp --display-name "Spring Cloud
 
 #### List Service Account
 - `gcloud iam service-accounts list`
-  - [reference]()
+  - [reference](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/list)
+
+List all of a project's service accounts.
 
 #### Grant Service Account to Resource
 - `gcloud projects add-iam-policy-binding <PROJECT_ID> --member serviceAccount:<SERVICE_ACCOUNT> --role <ROLE>`
