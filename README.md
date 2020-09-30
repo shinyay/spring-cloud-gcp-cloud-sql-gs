@@ -142,6 +142,16 @@ mysql> show grants for 'employee-user'@'%';
 $ gcloud sql instances describe my-mysql --format='value(connectionName)'
 ```
 
+### Service Account for Spring Cloud GCP
+#### Create Service Account
+- `gcloud iam service-accounts create <NAME> --display-name "DISPLAY_NAME"`
+
+This command creates a service account with the provided name.
+
+```shell script
+gcloud iam service-accounts create spring-cloud-gcp --display-name "Spring Cloud GCP"
+```
+
 ## Features
 
 - feature:1
