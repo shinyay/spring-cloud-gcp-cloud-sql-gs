@@ -23,6 +23,7 @@ dependencies {
 |spring.cloud.gcp.sql.credentials.encoded-key|Base64-encoded strings <br> `base64 key.json`|
 |spring.datasource.username|User name for database access|
 |spring.datasource.password|User name for database password|
+|spring.datasource.driver-class-name|JDBC Driver<br>8.x: `com.mysql.cj.jdbc.Driver`<br>before 8.x: `com.mysql.jdbc.Driver`|
 
 ```yaml
 spring:
