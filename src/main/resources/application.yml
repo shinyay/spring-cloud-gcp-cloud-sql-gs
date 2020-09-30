@@ -5,7 +5,7 @@ spring:
         instance-connection-name: ${CONNECTION_NAME:shinyay-demo:us-central1:my-mysql}
         database-name: employee
         credentials:
-#          encoded-key: <BASE64_ENCODED_SERVICE_ACCOUNT_KEY>
+          encoded-key: <BASE64_ENCODED_SERVICE_ACCOUNT_KEY>
 #          location: classpath:credential/key.json
 #          location: file:/Users/shinyay/key.json
   datasource:
