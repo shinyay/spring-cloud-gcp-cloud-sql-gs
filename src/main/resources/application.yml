@@ -2,7 +2,7 @@ spring:
   cloud:
     gcp:
       sql:
-        instance-connection-name: ${CONNECTION_NAME:shinyay-works-200908-288904:us-central1:my-mysql}
+        instance-connection-name: ${CONNECTION_NAME:shinyay-demo:us-central1:my-mysql}
         database-name: employee
         credentials:
 #          encoded-key: <BASE64_ENCODED_SERVICE_ACCOUNT_KEY>

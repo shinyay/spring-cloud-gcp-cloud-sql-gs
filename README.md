@@ -13,12 +13,17 @@ dependencies {
 ```
 
 #### Spring Cloud GCP - Cloud SQL Configuration
+
+|Property Name|Description|
+|-------------|-----------|
+|spring.cloud.gcp.sql.instance-connection-name|Cloud SQL Instance Connection Name<br>`project-id:region:instance-name`<br>You can get by `gcloud sql instances describe my-mysql --format='value(connectionName)'`|
+
 ```yaml
 spring:
   cloud:
     gcp:
       sql:
-        instance-connection-name: ${CONNECTION_NAME:shinyay-works-200908-288904:us-central1:my-mysql}
+        instance-connection-name: ${CONNECTION_NAME}
         database-name: employee
         credentials:
 ### either one of the followings
