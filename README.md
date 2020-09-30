@@ -152,6 +152,9 @@ This command creates a service account with the provided name.
 gcloud iam service-accounts create spring-cloud-gcp --display-name "Spring Cloud GCP"
 ```
 
+#### List Service Account
+- `gcloud iam service-accounts list`
+
 ## Features
 
 - feature:1
