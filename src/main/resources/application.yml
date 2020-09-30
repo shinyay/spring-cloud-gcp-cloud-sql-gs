@@ -2,8 +2,13 @@ spring:
   cloud:
     gcp:
       sql:
-        instance-connection-name: ${CONNECTION_NAME}
+        instance-connection-name: ${CONNECTION_NAME:shinyay-works-200908-288904:us-central1:my-mysql}
         database-name: employee
+        credentials:
+#          encoded-key: <BASE64_ENCODED_SERVICE_ACCOUNT_KEY>
+#          location: classpath:credential/key.json
+#          location: file:/Users/shinyay/key.json
   datasource:
     username: ${USERNAME:root}
     password: ${PASSWORD:admin}
+    driver-class-name: com.mysql.cj.jdbc.Driver
