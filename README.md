@@ -73,24 +73,24 @@ $ gcloud sql instances create my-mysql \
     --root-password=[ROOT_PASSWORD]
 ```
 
-#### Create Employee Database
+#### 4. Create Employee Database
 ```shell script
 $ gcloud sql databases create employee --instance=my-mysql
 ```
 
-#### Connect MySQL Instance
+#### 5. Connect MySQL Instance
 ```shell script
 $ gcloud beta sql connect my-mysql
 ```
 
 `gclod beta sql` uses Cloud SQL Proxy.
 
-#### Create Table
+#### 6. Create Table
 ```shell script
 mysql> use employee
 ```
 
-```mysql
+```sql
 DROP TABLE IF EXISTS employee;
 
 CREATE TABLE employee (
