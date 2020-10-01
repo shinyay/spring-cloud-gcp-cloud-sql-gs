@@ -205,7 +205,7 @@ $ gcloud projects add-iam-policy-binding (gcloud config get-value project) \
     --role roles/editor
 ```
 
-#### Create Service Account Key
+#### 2.4. Create Service Account Key
 - `gcloud iam service-accounts keys create <OUTPUT_FILE> --iam-account <SERVICE_ACCOUNT>`
   - [reference](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/keys/create)
 
@@ -216,7 +216,7 @@ $ gcloud iam service-accounts keys create key.json \
   --iam-account spring-cloud-gcp@(gcloud config get-value project).iam.gserviceaccount.com
 ```
 
-#### Encode Service Account Key by Base64
+#### 2.5. Encode Service Account Key by Base64
 
 ```shell script
 $ base64 key.json
