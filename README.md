@@ -176,8 +176,8 @@ mysql> show grants for 'employee-user'@'%';
 $ gcloud sql instances describe my-mysql --format='value(connectionName)'
 ```
 
-### Service Account for Spring Cloud GCP
-#### Create Service Account
+### 2. Service Account for Spring Cloud GCP
+#### 2.1. Create Service Account
 - `gcloud iam service-accounts create <NAME> --display-name "DISPLAY_NAME"`
   - [reference](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/create)
  
@@ -187,13 +187,13 @@ This command creates a service account with the provided name.
 gcloud iam service-accounts create spring-cloud-gcp --display-name "Spring Cloud GCP"
 ```
 
-#### List Service Account
+#### 2.2. List Service Account
 - `gcloud iam service-accounts list`
   - [reference](https://cloud.google.com/sdk/gcloud/reference/iam/service-accounts/list)
 
 List all of a project's service accounts.
 
-#### Grant Service Account to Resource
+#### 2.3. Grant Service Account to Resource
 - `gcloud projects add-iam-policy-binding <PROJECT_ID> --member serviceAccount:<SERVICE_ACCOUNT> --role <ROLE>`
   - [reference](https://cloud.google.com/sdk/gcloud/reference/projects/add-iam-policy-binding)
 
