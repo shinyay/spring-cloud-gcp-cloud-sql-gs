@@ -12,3 +12,4 @@ spring:
     username: ${USERNAME:root}
     password: ${PASSWORD:admin}
     driver-class-name: com.mysql.cj.jdbc.Driver
+    initialization-mode: always
