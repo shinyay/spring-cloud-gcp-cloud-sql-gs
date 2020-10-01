@@ -52,18 +52,18 @@ The Cloud SQL Socket Factory is a library for the MySQL/Postgres JDBC drivers th
 
 
 ## Demo
-### Cloud SQL
-#### 1. Login
+### 1. Cloud SQL
+#### 1.1. Login
 ```shell script
 $ gcloud beta auth login
 ```
 
-#### 2. Enable API
+#### 1.2. Enable API
 ```shell script
 $ gcloud services enable sqladmin.googleapis.com
 ```
 
-#### 3. Create MySQL Instance
+#### 1.3. Create MySQL Instance
 ```shell script
 $ gcloud sql instances create my-mysql \
     --database-version=MYSQL_5_7 \
@@ -73,19 +73,19 @@ $ gcloud sql instances create my-mysql \
     --root-password=[ROOT_PASSWORD]
 ```
 
-#### 4. Create Employee Database
+#### 1.4. Create Employee Database
 ```shell script
 $ gcloud sql databases create employee --instance=my-mysql
 ```
 
-#### 5. Connect MySQL Instance
+#### 1.5. Connect MySQL Instance
 ```shell script
 $ gcloud beta sql connect my-mysql
 ```
 
 `gclod beta sql` uses Cloud SQL Proxy.
 
-#### 6. Create Table
+#### 1.6. Create Table
 ```shell script
 mysql> use employee
 ```
@@ -128,7 +128,7 @@ INSERT INTO department VALUES ('30','SALES');
 INSERT INTO department VALUES ('40','OPERATIONS');
 ```
 
-#### Add User
+#### 1.7. Add User
 ```shell script
 $ gcloud sql users create employee-user --instance=my-mysql --host=% --password=[PASSWORD]
 ```
@@ -141,7 +141,7 @@ employee-user  %
 root           %
 ```
 
-##### Grant User
+##### 1.8. Grant User
 Grant added user to access the specific database. The following query shows user can access only employee database.
 
 ```shell script
@@ -171,7 +171,7 @@ mysql> show grants for 'employee-user'@'%';
 2 rows in set (0.13 sec)
 ```
 
-#### Retrieve Instance Connection Name
+#### 1.9. Retrieve Instance Connection Name
 ```shell script
 $ gcloud sql instances describe my-mysql --format='value(connectionName)'
 ```
