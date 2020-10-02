@@ -15,5 +15,5 @@ class DepartmentService(val repository: DepartmentRepository) {
 
     fun updateDepartment(department: Department) = repository.save(department)
 
-
+    fun deleteDepartmentById(departmentId: Int) = repository.deleteById(departmentId)
 }
