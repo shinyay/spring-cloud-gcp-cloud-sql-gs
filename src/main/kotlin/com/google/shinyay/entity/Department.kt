@@ -4,5 +4,5 @@ import javax.persistence.*
 
 @Entity
 @Table(name = "department")
-data class Department(val department_id: Long,
+data class Department(@Id val department_id: Long,
                       val name: String)
