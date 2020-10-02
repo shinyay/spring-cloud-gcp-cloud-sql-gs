@@ -10,4 +10,6 @@ class DepartmentService(val repository: DepartmentRepository) {
     fun getDepartmentById(departmentId: Int) = repository.findById(departmentId)
 
     fun getDepartmentList(): List<Department> = repository.findAll()
+
+    fun createDepartment(department: Department) = repository.save(department)
 }
