@@ -92,6 +92,17 @@ data class Department(@Id @GeneratedValue(strategy = GenerationType.AUTO) val de
 interface DepartmentRepository : JpaRepository<Department, Int>
 ```
 
+##### Configuration for JPA
+
+- `kotlin("plugin.jpa")`: kotlin-jpa is wrapped on top of no-arg which specifies @Entity, @Embeddable and @MappedSuperclass no-arg annotations automatically
+
+```kotlin
+plugins {
+	kotlin("plugin.jpa") version "1.3.72"
+	kotlin("plugin.noarg") version "1.3.72"
+}
+```
+
 ### Cloud SQL Socket Factory for JDBC drivers
 The Cloud SQL Socket Factory is a library for the MySQL/Postgres JDBC drivers that allows a user with the appropriate permissions to connect to a Cloud SQL database without having to deal with IP whitelisting or SSL certificates manually.
 - [github](https://github.com/GoogleCloudPlatform/cloud-sql-jdbc-socket-factory)
