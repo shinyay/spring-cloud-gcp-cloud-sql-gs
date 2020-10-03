@@ -82,6 +82,15 @@ data class Department(@Id @GeneratedValue(strategy = GenerationType.AUTO) val de
                       @Column(nullable = false, name = "department_name") val name: String)
 ```
 
+##### Repository for Department
+
+- `@Repository`: This is applied over DAO and DDD style repositories
+
+```kotlin
+@Repository
+interface DepartmentRepository : JpaRepository<Department, Int>
+```
+
 ### Cloud SQL Socket Factory for JDBC drivers
 The Cloud SQL Socket Factory is a library for the MySQL/Postgres JDBC drivers that allows a user with the appropriate permissions to connect to a Cloud SQL database without having to deal with IP whitelisting or SSL certificates manually.
 - [github](https://github.com/GoogleCloudPlatform/cloud-sql-jdbc-socket-factory)
