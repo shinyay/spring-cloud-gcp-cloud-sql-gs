@@ -65,7 +65,8 @@ dependencies {
 
 ##### Entity for Department
 
-- `@Entity`: Specify this class is entity
+- `@Entity`: Specify this class is JPA entity
+- `@Table` : Specify table name
 
 ```kotlin
 @Entity
