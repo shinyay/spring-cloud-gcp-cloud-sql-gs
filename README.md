@@ -85,6 +85,7 @@ data class Department(@Id @GeneratedValue(strategy = GenerationType.AUTO) val de
 ##### Repository for Department
 
 - `@Repository`: This is applied over DAO and DDD style repositories
+- `JpaRepository`: Extending JpaRepository adds a bunch of generic CRUD functions
 
 ```kotlin
 @Repository
