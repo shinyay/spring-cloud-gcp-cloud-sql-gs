@@ -68,6 +68,11 @@ dependencies {
 - `@Entity`: Specify this class is JPA entity
 - `@Table` : Specify table name
 - `@Id`: Specify Primary key parameter
+- `@GeneratedValue`: Generate value for key id
+  - `GenerationType.AUTO`
+    - `GenerationType.IDENTITY`
+    - `GenerationType.SEQUENCE`
+    - `GenerationType.TABLE`
 
 ```kotlin
 @Entity
