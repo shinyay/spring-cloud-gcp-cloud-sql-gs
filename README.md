@@ -70,7 +70,7 @@ dependencies {
 - `@Id`: Specify Primary key parameter
 - `@GeneratedValue`: Generate value for key id
   - `GenerationType.AUTO`
-    - `GenerationType.IDENTITY`
+    - `GenerationType.IDENTITY`: using a database identity column
     - `GenerationType.SEQUENCE`
     - `GenerationType.TABLE`
 
