@@ -1,4 +1,6 @@
 package com.google.shinyay.entity
 
-class Employee {
-}
+data class Employee(val id: Long,
+                    val name: String,
+                    val role: String,
+                    val department_id: Long)
