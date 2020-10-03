@@ -71,7 +71,7 @@ dependencies {
 - `@GeneratedValue`: Generate value for key id
   - `GenerationType.AUTO`
     - `GenerationType.IDENTITY`: using a database identity column
-    - `GenerationType.SEQUENCE`
+    - `GenerationType.SEQUENCE`: using a database sequence
     - `GenerationType.TABLE`
 
 ```kotlin
