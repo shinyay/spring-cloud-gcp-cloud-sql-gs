@@ -10,4 +10,6 @@ class EmployeeRepository(val jdbcTemplate: JdbcTemplate) {
     fun getEmployees(): List<String>? = jdbcTemplate.queryForList("SELECT * FROM employee")
             .map { m: Map<String?, Any?> -> m.values.toString() }
             .toList()
+
+    fun getEmployeeByName(){}
 }
