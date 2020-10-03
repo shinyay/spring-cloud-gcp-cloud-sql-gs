@@ -56,6 +56,13 @@ fun getEmployees(): List<String>? = jdbcTemplate.queryForList("SELECT * FROM emp
 #### Spring Data JPA
 **Spring Data JPA** makes it easy to easily implement JPA based repositories.
 
+##### Dependency for Spring Data JPA
+```kotlin
+dependencies {
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+}
+```
+
 ### Cloud SQL Socket Factory for JDBC drivers
 The Cloud SQL Socket Factory is a library for the MySQL/Postgres JDBC drivers that allows a user with the appropriate permissions to connect to a Cloud SQL database without having to deal with IP whitelisting or SSL certificates manually.
 - [github](https://github.com/GoogleCloudPlatform/cloud-sql-jdbc-socket-factory)
