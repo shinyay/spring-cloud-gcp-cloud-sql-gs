@@ -63,6 +63,15 @@ dependencies {
 }
 ```
 
+##### Entity for Department
+
+```kotlin
+@Entity
+@Table(name = "department")
+data class Department(@Id @GeneratedValue(strategy = GenerationType.AUTO) val department_id: Long,
+                      @Column(nullable = false, name = "department_name") val name: String)
+```
+
 ### Cloud SQL Socket Factory for JDBC drivers
 The Cloud SQL Socket Factory is a library for the MySQL/Postgres JDBC drivers that allows a user with the appropriate permissions to connect to a Cloud SQL database without having to deal with IP whitelisting or SSL certificates manually.
 - [github](https://github.com/GoogleCloudPlatform/cloud-sql-jdbc-socket-factory)
