@@ -45,6 +45,16 @@ spring:
 ```
 
 #### Spring JDBC - JdbcTemplate
+**JdbcTemplate** makes it easy to work with SQL relational databases and JDBC. 
+
+```kotlin
+fun getEmployees(): List<String>? = jdbcTemplate.queryForList("SELECT * FROM employee")
+        .map { m: Map<String?, Any?> -> m.values.toString() }
+        .toList()
+```
+
+#### Spring Data JPA
+**Spring Data JPA** makes it easy to easily implement JPA based repositories.
 
 ### Cloud SQL Socket Factory for JDBC drivers
 The Cloud SQL Socket Factory is a library for the MySQL/Postgres JDBC drivers that allows a user with the appropriate permissions to connect to a Cloud SQL database without having to deal with IP whitelisting or SSL certificates manually.
