@@ -95,6 +95,7 @@ interface DepartmentRepository : JpaRepository<Department, Int>
 ##### Configuration for JPA
 
 - `kotlin("plugin.jpa")`: kotlin-jpa is wrapped on top of no-arg which specifies @Entity, @Embeddable and @MappedSuperclass no-arg annotations automatically
+- `kotlin("plugin.noarg")`: no-arg compiler plugin generates an additional zero-argument constructor for classes with a specific annotation
 
 ```kotlin
 plugins {
