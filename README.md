@@ -67,6 +67,7 @@ dependencies {
 
 - `@Entity`: Specify this class is JPA entity
 - `@Table` : Specify table name
+- `@Id`: Specify Primary key parameter
 
 ```kotlin
 @Entity
