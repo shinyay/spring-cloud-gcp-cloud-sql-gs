@@ -65,6 +65,8 @@ dependencies {
 
 ##### Entity for Department
 
+- `@Entity`: Specify this class is entity
+
 ```kotlin
 @Entity
 @Table(name = "department")
