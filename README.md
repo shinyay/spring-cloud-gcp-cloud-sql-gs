@@ -73,6 +73,7 @@ dependencies {
     - `GenerationType.IDENTITY`: using a database identity column
     - `GenerationType.SEQUENCE`: using a database sequence
     - `GenerationType.TABLE`: using an underlying database table to ensure uniqueness
+- `@Column`: Specify column info like name
 
 ```kotlin
 @Entity
