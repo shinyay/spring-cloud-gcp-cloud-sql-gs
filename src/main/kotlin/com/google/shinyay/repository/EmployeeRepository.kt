@@ -3,9 +3,7 @@ package com.google.shinyay.repository
 import com.google.shinyay.entity.Employee
 import com.google.shinyay.entity.EmployeeRowMapper
 import org.springframework.jdbc.core.JdbcTemplate
-import org.springframework.jdbc.core.queryForObject
 import org.springframework.stereotype.Repository
-import java.sql.ResultSet
 
 
 @Repository
