@@ -53,6 +53,9 @@ fun getEmployees(): List<String>? = jdbcTemplate.queryForList("SELECT * FROM emp
         .toList()
 ```
 
+##### Custom RowMapper
+`jdbcTemplate.queryForObject()` a single row record from a database and convert the row into an object via row mapper
+ 
 #### Spring Data JPA
 **Spring Data JPA** makes it easy to easily implement JPA based repositories.
 
