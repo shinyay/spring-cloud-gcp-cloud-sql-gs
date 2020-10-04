@@ -54,8 +54,7 @@ fun getEmployees(): List<String>? = jdbcTemplate.queryForList("SELECT * FROM emp
 ```
 
 ##### Custom RowMapper
-`jdbcTemplate.queryForObject()` a single row record from a database and convert the row into an object via row mapper.
-
+`RowMappaer<T>` interface is used by JdbcTemplate for mapping rows of a ResultSet on a per-row basis.
 It implements `RowMapper` to bind database and object.
 
 ```kotlin
@@ -74,7 +73,8 @@ override fun mapRow(rs: ResultSet, rowNum: Int): Employee? {
 }
 ```
 
-##### Retrieve with RowMapper
+##### queryForObject with RowMapper
+- `queryForObject`: It queries a single row record from a database and convert the row into an object via row mapper.
 
 ```kotlin
 fun getEmployeeByName(name: String): Employee? {
