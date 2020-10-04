@@ -90,6 +90,8 @@ fun getEmployeeByName(name: String): Employee? {
 ```
 
 ##### Call queryForObject with parameters from API
+- `@PathVariable`: it uses variables from API path
+  - @GetMapping("/employee/**{name}**")
 
 ```kotlin
 @GetMapping("/employee/{name}")
