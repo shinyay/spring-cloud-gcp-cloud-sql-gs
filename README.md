@@ -62,6 +62,18 @@ It implements `RowMapper` to bind database and object.
 class EmployeeRowMapper : RowMapper<Employee>
 ```
 
+This maps database and entity.
+```kotlin
+override fun mapRow(rs: ResultSet, rowNum: Int): Employee? {
+    return Employee(
+            rs.getLong("employee_id"),
+            rs.getString("employee_name"),
+            rs.getString("role"),
+            rs.getLong("department_id")
+    )
+}
+```
+
 ##### 
 
 #### Spring Data JPA
