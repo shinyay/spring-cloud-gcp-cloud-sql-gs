@@ -74,6 +74,18 @@ override fun mapRow(rs: ResultSet, rowNum: Int): Employee? {
 }
 ```
 
+##### Retrieve with RowMapper
+
+```kotlin
+fun getEmployeeByName(name: String): Employee? {
+    return jdbcTemplate.queryForObject(
+            "SELECT * FROM employee WHERE employee_name = ?",
+            arrayOf<Any>(name),
+            EmployeeRowMapper()
+    )
+}
+```
+
 ##### 
 
 #### Spring Data JPA
