@@ -75,6 +75,9 @@ override fun mapRow(rs: ResultSet, rowNum: Int): Employee? {
 
 ##### queryForObject with RowMapper
 - `queryForObject`: It queries a single row record from a database and convert the row into an object via row mapper.
+  - 1st parameter - SQL
+  - 2nd parameter - Arguments to bind to the query palaceholder for prepared statement
+  - 3rd parameter - RowMapper
 
 ```kotlin
 fun getEmployeeByName(name: String): Employee? {
