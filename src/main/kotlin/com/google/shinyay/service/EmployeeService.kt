@@ -5,4 +5,6 @@ import org.springframework.stereotype.Service
 
 @Service
 class EmployeeService(val repository: EmployeeRepository) {
+
+    fun getEmployeeByName(name: String) = repository.getEmployeeByName(name)
 }
