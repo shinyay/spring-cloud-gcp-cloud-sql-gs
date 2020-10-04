@@ -16,7 +16,7 @@ class EmployeeRepository(val jdbcTemplate: JdbcTemplate) {
             .toList()
 
     fun getEmployeeByName(name: String): Employee? {
-        jdbcTemplate.queryForObject(
+        return jdbcTemplate.queryForObject(
                 "SELECT * FROM employee WHERE employee_name = ?",
                 arrayOf<Any>(name),
                 EmployeeRowMapper()
