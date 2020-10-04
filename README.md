@@ -54,8 +54,16 @@ fun getEmployees(): List<String>? = jdbcTemplate.queryForList("SELECT * FROM emp
 ```
 
 ##### Custom RowMapper
-`jdbcTemplate.queryForObject()` a single row record from a database and convert the row into an object via row mapper
- 
+`jdbcTemplate.queryForObject()` a single row record from a database and convert the row into an object via row mapper.
+
+It implements `RowMapper` to bind database and object.
+
+```kotlin
+class EmployeeRowMapper : RowMapper<Employee>
+```
+
+##### 
+
 #### Spring Data JPA
 **Spring Data JPA** makes it easy to easily implement JPA based repositories.
 
