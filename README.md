@@ -89,7 +89,12 @@ fun getEmployeeByName(name: String): Employee? {
 }
 ```
 
-##### 
+##### Call queryForObject with parameters from API
+
+```kotlin
+@GetMapping("/employee/{name}")
+fun findEmployeeByName(@PathVariable("name") name: String) = repository.getEmployeeByName(name)
+```
 
 #### Spring Data JPA
 **Spring Data JPA** makes it easy to easily implement JPA based repositories.
