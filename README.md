@@ -153,6 +153,8 @@ plugins {
 ##### Entity for Location
 - `@Id`: Specify Primary key parameter
 
+You don't have to put `@Entity` annotation
+
 ```kotlin
 data class Location(@Id val id: Long,
                     val city: String,
