@@ -7,5 +7,7 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class LocationController(val service: LocationService) {
 
+    @GetMapping("/location/count")
+    fun countLocation() = service.countLocations()
 
 }
