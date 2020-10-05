@@ -9,5 +9,5 @@ import org.springframework.stereotype.Repository
 interface LocationRepository : CrudRepository<Location, Long> {
 
     @Query("SELECT COUNT(*) FROM location")
-    fun countAll()
+    fun countAll(): Long
 }
