@@ -44,7 +44,7 @@ spring:
 
 ```
 
-#### Spring Data
+### Spring Data
 - Spring JDBC
 - Spring Data JPA
 - Spring Data JDBC
