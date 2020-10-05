@@ -1,7 +1,7 @@
 # Spring Cloud GCP - Cloud SQL Getting Started
 Spring Cloud GCP offers a wide collection of libraries that make it easier to use Google Cloud Platform from Spring Framework applications.
 
-This tutorial shows **Spring Data Cloud SQL**.
+This tutorial shows **Spring Cloud GCP** with **Cloud SQL - MySQL**.
 
 ## Description
 ### Spring Cloud GCP
